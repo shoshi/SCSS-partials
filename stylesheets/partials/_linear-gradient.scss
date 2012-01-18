@@ -1,0 +1,7 @@
+@mixin _linear-gradient($start, $end){
+  background-image: -o-linear-gradient(bottom, $start, $end);
+  background-image: -ms-linear-gradient(bottom, $start, $end);
+  background-image: -webkit-linear-gradient(bottom, $start, $end);
+  background-image: -moz-linear-gradient(bottom, $start, $end);
+  background-image: linear-gradient(bottom, $start, $end);
+}

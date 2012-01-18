@@ -1,0 +1,36 @@
+/*
+ *= require reset
+ *= require_self
+ *= require jquery.Jcrop
+ *
+ * BloomBox Social Networking and UGC Toolkit
+ * Copyright 2006-2011, Mint Digital Limited, All rights reserved.
+ */
+
+/*** Colors ***
+ * (UPDATE THIS as you code!)
+ * Dark gray:   #263740   Text
+ * Gray:        #999      Metadata, borders
+ * Blue:        #25a9e0   Buttons, links
+ * Blue:        #64aec1   Stop wasting money colour
+ * Red:         #DB4A50   Mission Headings
+ * Medium Gray: #6C6C64   Paragraphs, Body text
+ * COLOR:       #CODE
+ */
+
+$blue: blue;
+$red: red;
+
+/*** Global ***/
+@import "partials/_border-radius";
+@import "partials/_box-shadow";
+@import "partials/_linear-gradient";
+@import "partials/_radial-gradient";
+
+#test {
+  width:100px;
+  height:100px;
+  @include _border-radius(50px);
+  @include _box-shadow(1px 2px 3px $blue);
+  @include _linear-gradient(green 20%, grey 80%);
+}

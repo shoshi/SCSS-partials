@@ -1,0 +1,7 @@
+@mixin _radial-gradient($start, $end){
+  background-image: -o-radial-gradient(center, ellipse cover, $start, $end);
+  background-image: -ms-radial-gradient(center, ellipse cover, $start, $end);
+  background-image: -webkit-radial-gradient(center, ellipse cover, $start, $end);
+  background-image: -moz-radial-gradient(center, ellipse cover, $start, $end);
+  background-image: radial-gradient(center, ellipse cover, $start, $end);
+}
