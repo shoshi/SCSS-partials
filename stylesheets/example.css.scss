@@ -18,8 +18,9 @@
  * COLOR:       #CODE
  */
 
-$blue: blue;
-$red: red;
+$blue: #2957c0;
+$red: #c02929;
+$green: #29c03f;
 
 /*** Global ***/
 @import "partials/_border-radius";
@@ -30,7 +31,8 @@ $red: red;
 #test {
   width:100px;
   height:100px;
+  border:2px solid $green;
   @include _border-radius(50px);
-  @include _box-shadow(1px 2px 3px $blue);
-  @include _linear-gradient(green 20%, grey 80%);
+  @include _box-shadow(1px 2px 30px $blue);
+  @include _linear-gradient($red 20%, grey 80%);
 }
