@@ -29,10 +29,23 @@ $green: #29c03f;
 @import "partials/_radial-gradient";
 
 #test {
+  margin: 40px 0;
   width:100px;
   height:100px;
   border:2px solid $green;
   @include _border-radius(50px);
   @include _box-shadow(1px 2px 30px $blue);
   @include _linear-gradient($red 20%, grey 80%);
+}
+
+a,
+button {
+  color: $blue;
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+  &:active {
+    color: $green;
+  }
 }

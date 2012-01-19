@@ -18,6 +18,7 @@
  */
 /*** Global ***/
 #test {
+  margin: 40px 0;
   width: 100px;
   height: 100px;
   border: 2px solid #29c03f;
@@ -32,3 +33,14 @@
   background-image: -webkit-linear-gradient(bottom, #c02929 20%, grey 80%);
   background-image: -moz-linear-gradient(bottom, #c02929 20%, grey 80%);
   background-image: linear-gradient(bottom, #c02929 20%, grey 80%); }
+
+a,
+button {
+  color: #2957c0; }
+  a:hover, a:focus,
+  button:hover,
+  button:focus {
+    color: #c02929; }
+  a:active,
+  button:active {
+    color: #29c03f; }
